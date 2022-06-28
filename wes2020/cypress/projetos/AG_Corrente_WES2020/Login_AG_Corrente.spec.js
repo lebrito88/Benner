@@ -61,15 +61,15 @@ describe('Digitar PEG de Consulta - AG_CORRENTE', () => {
         cy.get('#select2-ctl00_Main_WDG_V_SAM_PEG_1465_PRINCIPAL_PageControl_PRINCIPAL_PRINCIPAL_ctl51_ctl01_select-results > :nth-child(1)').click()
         cy.wait(1000)
 
-        // Digitação de PEG - Selecionando campo Recebedor = "HOSPITAL 9 DE JULHO"
+        // Digitação de PEG - Selecionando campo Recebedor = "HOSPITAL SANTA APARECIDA - STR"
         cy.get('#ctl00_Main_WDG_V_SAM_PEG_1465_PRINCIPAL_PageControl_PRINCIPAL_PRINCIPAL_TABREGIMEPGTO_1 > .row > :nth-child(1) > .form-group > :nth-child(2) > .input-group > .select2 > .selection > .select2-selection').click()
-        cy.get('#ctl00_Main_WDG_V_SAM_PEG_1465_PRINCIPAL_PageControl_PRINCIPAL_PRINCIPAL_TABREGIMEPGTO_1 > .row > :nth-child(1) > .form-group > :nth-child(2) > .input-group > .select2 > .selection > .select2-selection').type('HOSPITAL 9 DE JULHO')
+        cy.get('#ctl00_Main_WDG_V_SAM_PEG_1465_PRINCIPAL_PageControl_PRINCIPAL_PRINCIPAL_TABREGIMEPGTO_1 > .row > :nth-child(1) > .form-group > :nth-child(2) > .input-group > .select2 > .selection > .select2-selection').type('HOSPITAL SANTA APARECIDA - STR')
         cy.get('.select2-results__option').click()        
         cy.wait(1000)
 
-        // Digitação de PEG - Selecionando campo Local de Execução = "HOSPITAL 9 DE JULHO"
+        // Digitação de PEG - Selecionando campo Local de Execução = "HOSPITAL SANTA APARECIDA - STR"
         cy.get(':nth-child(2) > .form-group > :nth-child(2) > .input-group > .select2 > .selection > .select2-selection').click()
-        cy.get(':nth-child(2) > .form-group > :nth-child(2) > .input-group > .select2 > .selection > .select2-selection').type('HOSPITAL 9 DE JULHO')
+        cy.get(':nth-child(2) > .form-group > :nth-child(2) > .input-group > .select2 > .selection > .select2-selection').type('HOSPITAL SANTA APARECIDA - STR')
         cy.get('.select2-results__option').click()        
         cy.wait(1000)
 
@@ -85,8 +85,16 @@ describe('Digitar PEG de Consulta - AG_CORRENTE', () => {
         cy.get('#ctl00_Main_WDG_V_SAM_PEG_1465_PRINCIPAL_PageControl_PRINCIPAL_PRINCIPAL_DATAPAGAMENTO_DATE').click()
         cy.contains('Hoje').click()
 
-        // Digitação de PEG - Confirmar a capa do pEG
+        // Digitação de PEG - Confirmar a capa do PEG
         cy.get('#ctl00_Main_WDG_V_SAM_PEG_1465_PRINCIPAL_FormContainer > .form-actions > .blue').click()
+
+
+
+        //TELA DE INCLUSÃO DE GUIA DE PEG
+        // Digitação da Guia- Selecionando data de Recebimento = Dia atual
+
+        cy.get('#portlet_WDG_V_SAM_PEG_1465_LNK3 > .portlet-title > .caption > .caption-subject').click()
+        
 
 
         //cy.get('button[class="btn btn-icon-only btn-circle btn-sm usuario"]').click()
