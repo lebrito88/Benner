@@ -1,0 +1,14 @@
+{
+  "name": "get-started",
+  "version": "1.0.0",
+  "description": "Inicio",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Luciano de Brito",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.2.0"
+  }
+}
