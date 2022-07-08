@@ -1,0 +1,1 @@
+Ess aqr incluí manualmente no GitHub para testar o comando stash
