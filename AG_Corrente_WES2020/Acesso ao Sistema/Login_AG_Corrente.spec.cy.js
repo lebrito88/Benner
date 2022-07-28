@@ -1,4 +1,4 @@
-describe('Validar Acesso e Logoff - AG_CORRENTE', () => {
+describe('Validar Acesso e Logoff - Teste branch via VSCode', () => {
 
     //Acessar AGWEB (AG_CORRENTE)
     it('Preencher Campo: "Usuário"', () => {
